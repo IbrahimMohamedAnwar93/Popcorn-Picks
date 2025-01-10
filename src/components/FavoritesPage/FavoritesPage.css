@@ -1,0 +1,50 @@
+.favorites-page {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  min-height: 100vh;
+}
+
+.favorites-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+}
+
+.favorite-movie {
+  background-color: #444;
+  border: 1px solid #555;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+}
+
+.favorite-movie:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.favorite-movie img {
+  width: 100%;
+  height: auto;
+}
+
+.favorite-movie h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: white;
+  padding: 0 10px;
+}
+
+.favorite-movie p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
